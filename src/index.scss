@@ -1,0 +1,62 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.pizza-card-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.pizza-card {
+	max-width: 150px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	ul {
+		list-style: none;
+	}
+}
+.pizza-card:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navigation {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.orders {
+		width: 400px;
+		border: 1px solid gray;
+		border-radius: 12px;
+		padding: 5px;
+	}
+	.statistics {
+		width: 400px;
+		border: 1px solid gray;
+		border-radius: 12px;
+		padding: 5px;
+		ul {
+			list-style: none;
+		}
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+	}
+}
